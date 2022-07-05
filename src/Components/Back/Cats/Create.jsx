@@ -22,7 +22,7 @@ function Create() {
                 <div className="form-group">
                     <label>Title</label>
                     <input type="text" className="form-control" onChange={e => setTitle(e.target.value)} value={title} />
-                    <small className="form-text text-muted">Enter tree title here.</small>
+                    <small className="form-text text-muted">Enter new category here.</small>
                 </div>
                 <button type="button" className="btn btn-outline-primary" onClick={handleCreate}>Create</button>
             </div>

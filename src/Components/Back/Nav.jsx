@@ -1,7 +1,11 @@
+
 import { NavLink } from "react-router-dom";
+import Messages from "./Messages";
 
 function Nav() {
+  
   return (
+    <>
     <div className="container">
       <div className="row">
         <div className="col-sm">
@@ -31,8 +35,11 @@ function Nav() {
             </NavLink>
           </nav>
         </div>
+        
       </div>
     </div>
+    <Messages/>
+    </>
   );
 }
 export default Nav;
