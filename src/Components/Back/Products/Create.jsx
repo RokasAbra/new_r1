@@ -41,6 +41,8 @@ function Create() {
         setPrice('');
         setInStock(false);
         setCat('0');
+        setPhotoPrint(null);
+        fileInput.current.value = null;
     }
 
     return (
@@ -78,9 +80,12 @@ function Create() {
                     <input ref={fileInput} type="file" className="form-control" onChange={doPhoto}/>
                     <small className="form-text text-muted">Upload Photo.</small>
                 </div>
-                <div className="photo-bin">
-                    <img src={photoPrint} alt='nice' />
-                </div>
+                {
+                    photoPrint ? <div className="photo-bin">
+                    <img src={photoPrint} alt='vienas'/>
+                </div> : null
+                }
+                
                 
                 <button type="button" className="btn btn-outline-primary" onClick={handleCreate}>Create</button>
             </div>

@@ -12,6 +12,7 @@ function Line({ line }) {
 
     const handleEdit = () => {
         setModalCat(line);
+        console.log(line);
     }
 
     return (
